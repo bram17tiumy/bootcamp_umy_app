@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjekAkhirPABD</name>
+    </assembly>
+    <members>
+        <member name="T:ProjekAkhirPABD.AksesDB">
+            <summary>
+            ini adalah class yang bernama AksesDB yang berfungsi untuk menghubungkan ke database
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.AksesDB.datadb">
+            <summary>
+            method untuk mengambil data dari database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjekAkhirPABD.AksesDB.cekkamar(System.String)">
+            <summary>
+            method untuk memvalidasi data jika terdapat data yang sama
+            </summary>
+            <param name="nokamar">Id Kamar yaitu no kamar</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjekAkhirPABD.AksesDB.tambahdata(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            method untuk menambah data
+            </summary>
+            <param name="nokamar">string nomor kamar</param>
+            <param name="nama">string nama</param>
+            <param name="ttl">string ttl</param>
+            <param name="alamat">string alamat</param>
+            <param name="pekerjaan">string pekerjaan</param>
+            <param name="notel">string nomor telepon</param>
+        </member>
+        <member name="M:ProjekAkhirPABD.AksesDB.edit(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            method untuk mengedit data
+            </summary>
+            <param name="nokamar">string nokamar</param>
+            <param name="nama">string nama</param>
+            <param name="ttl">string ttl</param>
+            <param name="alamat">string alamat</param>
+            <param name="pekerjaan">string pekerjaan</param>
+            <param name="notel">string notel</param>
+        </member>
+        <member name="M:ProjekAkhirPABD.AksesDB.hapusdata(System.String)">
+            <summary>
+            method untuk menghapus data berdasar id
+            </summary>
+            <param name="nokamar">string nokamar</param>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSet.penghunikoskosanDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSet.penghunikoskosanRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSet.penghunikoskosanRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.penghunikoskosanTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager">
+             <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(ProjekAkhirPABD.DataKosanTablePenghuniDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(ProjekAkhirPABD.DataKosanTablePenghuniDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(ProjekAkhirPABD.DataKosanTablePenghuniDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager.UpdateAll(ProjekAkhirPABD.DataKosanTablePenghuniDataSet)">
+             <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+             <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.DataKosanTablePenghuniDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+             <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.#ctor">
+            <summary>
+            sebuah method awal yang berfungsi untuk menjalankan fungsi ketika halaman ini pertama kali dimuat
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.lihatdata">
+            <summary>
+            method untuk menampilkan data
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.refreshhalaman">
+            <summary>
+            sebagai method untuk merefresh textbox dan button
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.datapenghunikosan_FormClosing_1(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            button ini berfungsi untuk menutup aplikasi
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.btTambahh_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            button ini berfungsi untuk menambahkan data ke database
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.btHapuss_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            button ini berfungsi untuk menghapus data di database
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.btEditt_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            button ini berfungsi untuk mengubah data di database
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.btRefreshh_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            button untuk refresh tampilan dengan memanggil fungsi method refresh yang telah dibuat sebelumnya
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.btKeluarr_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            button ini berfungsi untuk kembali ke halaman sebelumnya
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.btReportt_Click(System.Object,System.EventArgs)">
+            <summary>
+            button ini sudah dihapus di tampilan tapi belum dihapus dari sistem
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbNoKamarr_TextChanged_1(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbNamaa_TextChanged_1(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.dateTimePicker2_ValueChanged_1(System.Object,System.EventArgs)">
+            <summary>
+            method ini juga sama bedanya ini terjadi ketika mengubah tanggal
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbAlamatt_TextChanged_1(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbPekerjaann_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            method yang akhirannya tidak ada angka 1 itu tidak berfungsi, tetapi jika dihapus maka akan error.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.dateTimePicker2_KeyDown_1(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            method ini berfungsi untuk memunculkan event ketika panel datanya di klik
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <summary>
+            method ini untuk event yg akan terjadi ketika ada yang berubah
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbNoKamarr_KeyPress_1(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbNamaa_KeyPress_1(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbPekerjaann_KeyPress_1(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.tbNotel_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            method yang akhirannya tidak ada angka 1 itu tidak berfungsi, tetapi jika dihapus maka akan error.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProjekAkhirPABD.datapenghunikosan.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProjekAkhirPABD.datapenghunikosan.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProjekAkhirPABD.Form1.namauser">
+            <summary>
+            variabel nama user berfungsi sebagai penyimpan data nama admin yang akan dipindahkan ke halaman berikutnya
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.textBox1_Enter(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.textBox1_Leave(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.textBox2_Enter(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.textBox2_Leave(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.textBox1_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.textBox1_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            method ini untuk event yang akan terjadi jika terjadi perubahan pada textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.btnLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            method ini untuk button login sebagai proses validasi
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.Form1_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            method ini berfungsi untuk menutup aplikasi
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProjekAkhirPABD.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProjekAkhirPABD.Home.da">
+            <summary>
+            Ini Variabel untuk memulai fungsi - fungsi dari fitur aplikasi
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.lihatdata">
+            <summary>
+            method ini untuk melihat data di database
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.Home_Load(System.Object,System.EventArgs)">
+            <summary>
+            fungsi dari button ini untuk menampilkan pesan selamat datang ditambah dengan nama admin
+            </summary>
+            <param name="sender">object sender</param>
+            <param name="e">e parameter</param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.toolStripMenuItem1_Click(System.Object,System.EventArgs)">
+            <summary>
+            ini fitur untuk berpindah halaman
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.keluarToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            ini fitur untuk logout
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.Home_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            fitur untuk menutup aplikasi
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.tbSearch_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            ini fitur untuk mencari data
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProjekAkhirPABD.Home.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProjekAkhirPABD.Home.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:ProjekAkhirPABD.report.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.report.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProjekAkhirPABD.report.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.TestCase.login1">
+            <summary>
+            Test Case 1.1 Mengetes fungsi login username dan password valid
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.TestCase.login2">
+            <summary>
+            Test Case 1.2 Mengetes fungsi login username tidak valid dan password valid
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.TestCase.login3">
+            <summary>
+            Test Case 1.3 Mengetes fungsi login username valid dan password tidak valid
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.TestCase.login4">
+            <summary>
+            Test Case 1.4 Mengetes fungsi login username dan password tidak valid
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.TestCase.login5">
+            <summary>
+            Test Case 1.5 Mengetes fungsi login username dan password kosong
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.TestCase.search1">
+            <summary>
+            Test Case 2
+            </summary>
+        </member>
+        <member name="M:ProjekAkhirPABD.TestCase.cekkamar">
+            <summary>
+            Test Case 3.1 : Mengecek sistem ketika memasukkan nomor kamar yang sudah ada.
+            </summary>
+        </member>
+        <member name="T:ProjekAkhirPABD.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ProjekAkhirPABD.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ProjekAkhirPABD.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:SqlServerTypes.Utilities">
+            <summary>
+            Utility methods related to CLR Types for SQL Server 
+            </summary>
+        </member>
+        <member name="M:SqlServerTypes.Utilities.LoadNativeAssemblies(System.String)">
+            <summary>
+            Loads the required native assemblies for the current architecture (x86 or x64)
+            </summary>
+            <param name="rootApplicationPath">
+            Root path of the current application. Use Server.MapPath(".") for ASP.NET applications
+            and AppDomain.CurrentDomain.BaseDirectory for desktop applications.
+            </param>
+        </member>
+    </members>
+</doc>
