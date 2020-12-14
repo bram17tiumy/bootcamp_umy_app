@@ -21,7 +21,7 @@ namespace ProjekAkhirPABD
         //string strKoneksi = "Data Source = DESKTOP-V6C98QN; Initial Catalog=DataKosan; User ID = sa; password=parateman";
         //SqlConnection koneksi = new SqlConnection();
         //koneksi.ConnectionString = strKoneksi;
-        SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;Integrated Security=True");
+        SqlConnection koneksi = new SqlConnection(@"Data Source=LAPTOP-Q2F2C6F7;Initial Catalog=DataKosan;Integrated Security=True");
         //SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;User ID=sa;Password=parateman");
         /// <summary>
         /// method untuk mengambil data dari database
@@ -42,7 +42,7 @@ namespace ProjekAkhirPABD
 
         public string validasilogin(string uname, string pw)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-Q2F2C6F7;Initial Catalog=DataKosan;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("select count(*) from adminaplikasi where Username='" + uname + "' and Password='" + pw + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -191,7 +191,7 @@ namespace ProjekAkhirPABD
         }
         public DataTable caridata(string datacari)
         {
-            SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;Integrated Security=True");
+            SqlConnection koneksi = new SqlConnection(@"Data Source=LAPTOP-Q2F2C6F7;Initial Catalog=DataKosan;Integrated Security=True");
             SqlDataAdapter da;
             DataTable dt;
             if (datacari != "")

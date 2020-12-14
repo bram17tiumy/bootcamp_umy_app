@@ -24,7 +24,7 @@ namespace ProjekAkhirPABD
         /// </summary>
         SqlDataAdapter da;
         DataTable dt;
-        SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;Integrated Security=True");
+        SqlConnection koneksi = new SqlConnection(@"Data Source=LAPTOP-Q2F2C6F7;Initial Catalog=DataKosan;Integrated Security=True");
 
         /// <summary>
         /// method ini untuk melihat data di database

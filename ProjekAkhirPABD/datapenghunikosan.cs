@@ -22,7 +22,7 @@ namespace ProjekAkhirPABD
             refreshhalaman();
             lihatdata();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-Q2F2C6F7;Initial Catalog=DataKosan;Integrated Security=True");
         int a;
         /// <summary>
         /// method untuk menampilkan data
