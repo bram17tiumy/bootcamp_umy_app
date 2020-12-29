@@ -137,11 +137,6 @@ namespace ProjekAkhirPABD
 
         }
 
-        private void dView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btkeloladata_Click(object sender, EventArgs e)
         {
             datapenghunikosan d = new datapenghunikosan();

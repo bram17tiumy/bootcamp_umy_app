@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace ProjekAkhirPABD
 {
@@ -18,11 +19,11 @@ namespace ProjekAkhirPABD
         SqlCommandBuilder cmd;
         DataTable dt;
 
-        //string strKoneksi = "Data Source = DESKTOP-V6C98QN; Initial Catalog=DataKosan; User ID = sa; password=parateman";
+        //string strKoneksi = "Data Source = DESKTOP-V6C98QN; Initial Catalog=DataKosan; User ID = sa; password=inipassword";
         //SqlConnection koneksi = new SqlConnection();
         //koneksi.ConnectionString = strKoneksi;
         SqlConnection koneksi = new SqlConnection(@"Data Source=LAPTOP-Q2F2C6F7;Initial Catalog=DataKosan;Integrated Security=True");
-        //SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;User ID=sa;Password=parateman");
+        //SqlConnection koneksi = new SqlConnection(@"Data Source=DESKTOP-V6C98QN;Initial Catalog=DataKosan;User ID=sa;Password=inipassword");
         /// <summary>
         /// method untuk mengambil data dari database
         /// </summary>
